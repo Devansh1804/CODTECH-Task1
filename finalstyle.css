@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, 
+        rgba(255, 0, 0, 0.8), /* Red */
+        rgba(255, 165, 0, 0.8), /* Orange */
+        rgba(255, 255, 0, 0.8), /* Yellow */
+        rgba(0, 255, 0, 0.8), /* Green */
+        rgba(0, 0, 255, 0.8)  /* Blue */
+    );
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: transparent; /* Hide text color to reveal background texture */
+    background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+    )
+    calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+    );
+    background-size: var(--s) calc(var(--s) * 0.577);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Define custom properties */
+:root {
+    --s: 200px; /* Control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+}
+
+/* Button styling */
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+    transition: background-position 0.3s ease, background-size 0.3s ease;
+}
+
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
