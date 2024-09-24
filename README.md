@@ -1,8 +1,8 @@
-Name : Devansh Upadhyay
-Company : CODTECH IT SOLUTIONS
-ID : CT04DS7478
-Domain : Frontend  Web Development
-Duration : August to September 2024
+# Name : Devansh Upadhyay
+# Company : CODTECH IT SOLUTIONS
+# ID : CT04DS7478
+# Domain : Frontend  Web Development
+# Duration : August to September 2024
 
 # Overview of the project
 
