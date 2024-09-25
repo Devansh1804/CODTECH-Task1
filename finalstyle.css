@@ -25,9 +25,9 @@ body {
 }
 
 h1 {
-    font-size: 4rem; /* Adjust size as needed */
+    font-size: 4rem; 
     font-weight: bold;
-    color: transparent; /* Hide text color to reveal background texture */
+    color: transparent; 
     background: repeating-conic-gradient(
         from 30deg,
         #0000 0 120deg,
@@ -46,7 +46,6 @@ h1 {
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Define custom properties */
 :root {
     --s: 200px; /* Control the size */
     --c1: #1d1d1d;
